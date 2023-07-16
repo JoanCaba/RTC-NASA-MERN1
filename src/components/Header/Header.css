@@ -1,21 +1,40 @@
 header {
   position: sticky;
   top: 0;
-  height: 10svh;
+  height: 12svh;
+  min-height: 5.5rem;
   background: var(--primary-background-color-alpha);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  gap: 2rem;
   backdrop-filter: blur(3px);
   border-bottom: 1px solid var(--primary-text-color);
 }
-header > img {
-  height: 8svh;
+.header-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
 }
-header > a {
+.header-title > img {
+  height: 8svh;
+  min-height: 3rem;
+}
+.header-title > a {
   line-height: 1.2;
   font-style: normal;
   font-weight: 700;
   color: var(--primary-text-color);
+}
+.header-title h1 {
+  display: none;
+}
+@media screen and (min-width: 632px) {
+  .header-title h1 {
+    display: block;
+  }
+  .header-title {
+    justify-content: center;
+  }
 }

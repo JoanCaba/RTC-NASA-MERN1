@@ -1,4 +1,6 @@
 {
   "msgTitle": "Imagen astrónomica del día",
-  "msgCorresponds": "Esta imagen corresponde con la fecha"
+  "msgCorresponds": "Esta imagen corresponde con la fecha",
+  "msgSelectDate": "Selecciona una fecha",
+  "msgSelectApi": "Selecciona una API"
 }
