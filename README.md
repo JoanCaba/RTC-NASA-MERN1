@@ -19,15 +19,23 @@
   const today = new Date(Date.now()).toISOString().slice(0, 10);
   ```
 - fetch:
+
   ```
-  ${NASA_URL}planetary/apod?date=${date}&api_key=${NASA_API_KEY}`
+
+  ${NASA_URL}planetary/apod?date=${date}&api_key=${NASA_API_KEY}
+
   ```
+
 - handleInput:
+
   ```
+
   const handleInput = (ev) => {
   setDate(ev.target.value.toLocaleString());
   };
+
   ```
+
 - useEffect to get data from APOD API
 - Title: Astro..image...etc
 - mesaje: this image corresponds to date...etc
@@ -37,7 +45,9 @@
     - image, title, date, copyright, description.
 
 - Example query:
+
   ```
+
   {
   "copyright": "\nNicholas Roemmelt\n(Venture Photography)\n",
   "date": "2023-07-16",
@@ -49,3 +59,5 @@
   "url": "https://apod.nasa.gov/apod/image/2307/MeteorMountain_Roemmelt_960.jpg"
   }
   ```
+
+- APOD API dates => "Date must be between Jun 16, 1995 and today"
