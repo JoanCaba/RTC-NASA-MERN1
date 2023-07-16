@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import ImageCard from './components/ImageCard/ImageCard';
-
+import Figure from './components/Figure/Figure';
+import { msgTitle, msgCorresponds } from './data/messages.json'
+import Header from './components/Header/Header';
 const EXAMPLE_RESPONSE = {
   "copyright": "\nNicholas Roemmelt\n(Venture Photography)\n",
   "date": "2023-07-16",
@@ -13,8 +14,6 @@ const EXAMPLE_RESPONSE = {
   "url": "https://apod.nasa.gov/apod/image/2307/MeteorMountain_Roemmelt_960.jpg"
 }
 
-
-
 const SERVER_URL = 'https://api.nasa.gov/'
 const today = new Date(Date.now()).toISOString().slice(0, 10);
 function App() {
@@ -24,7 +23,7 @@ function App() {
   const handleInput = (ev) => {
     setSelectedDate(ev.target.value.toLocaleString());
   };
-  const { copyright, explanation, title, hdurl } = data
+  const { copyright, explanation, title, hdurl, date } = data
   /*
     useEffect(() => {
       fetch(SERVER_URL + 'apod?api_key=DEMO_KEY')
@@ -51,10 +50,11 @@ function App() {
     */
   return (
     <>
-      <div>{selectedDate}</div>
+      <Header></Header>
       <input type='date' value={selectedDate}
         min="1995-06-16" max={today} onChange={handleInput}></input>
-      <ImageCard title={title} description={explanation} imageSrc={hdurl} extraInformation={copyright}></ImageCard>
+      <h2>{msgCorresponds} {selectedDate}</h2>
+      <Figure title={title} description={explanation} imageSrc={hdurl} extraInformation={`© ${copyright} @ ${date}`}></Figure>
     </>
   )
 }

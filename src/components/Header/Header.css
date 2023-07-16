@@ -1,0 +1,21 @@
+header {
+  position: sticky;
+  top: 0;
+  height: 10svh;
+  background: var(--primary-background-color-alpha);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid var(--primary-text-color);
+}
+header > img {
+  height: 8svh;
+}
+header > a {
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
