@@ -5,9 +5,10 @@
   justify-content: center;
   gap: 2rem;
   padding: 2rem 1rem;
-  /* border: 1px solid red; */
   border-radius: 5px;
   box-shadow: var(--box-shadow);
+  background: var(--secondary-background-color);
+  color: var(--secondary-text-color);
 }
 figure img {
   width: 300px;

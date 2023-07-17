@@ -4,4 +4,8 @@ main {
   align-items: center;
   padding: 1rem 5rem;
   min-height: 80svh;
+  background: var(--tertiary-background-color);
+}
+main h2 {
+  color: var(--tertiary-text-color);
 }

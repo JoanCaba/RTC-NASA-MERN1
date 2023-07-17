@@ -1,6 +1,7 @@
 .body-footer {
   height: 8svh;
   background: var(--primary-background-color-alpha);
+  color: var(--primary-text-color);
   display: flex;
   justify-content: space-around;
   align-items: center;

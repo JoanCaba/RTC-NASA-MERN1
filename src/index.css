@@ -14,12 +14,15 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --primary-text-color: black;
-  --primary-background-color: white;
-  --primary-background-color-alpha: #ffffffb7;
+  --primary-text-color: #094067;
+  --primary-background-color: #fffffe;
+  --primary-background-color-alpha: #fffffeb7;
 
-  --secondary-text-color: black;
-  --secondary-background-color: white;
+  --secondary-text-color: #d8eefe;
+  --secondary-background-color: #094067;
+  --secondary-background-color-alpha: #094067b7;
+  --tertiary-background-color: #fffffe;
+  --tertiary-text-color: #094067;
   --box-shadow: 1px 1px 2px 1px rgba(153, 153, 153, 1);
 }
 * {

@@ -4,6 +4,7 @@ header {
   height: 12svh;
   min-height: 5.5rem;
   background: var(--primary-background-color-alpha);
+  color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
