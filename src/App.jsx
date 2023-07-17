@@ -6,7 +6,7 @@ import Header from '/src/components/Header/Header';
 //import getRequestUrl from './utils/getRequestUrl';
 //import transformData from './utils/transformData';
 //import Apod from '/src/components/Apod/Apod';
-import Main from '/src/components/Main/Main';
+import MainSection from '/src/components/MainSection/MainSection';
 import Footer from '/src/components/Footer/Footer';
 const EXAMPLE_RESPONSE_APOD = {
   "copyright": "\nNicholas Roemmelt\n(Venture Photography)\n",
@@ -1206,7 +1206,7 @@ function App() {
   return (
     <>
       <Header setSelectedApi={setSelectedApi} selectedApi={selectedApi} selectedDate={selectedDate} setSelectedDate={setSelectedDate} today={today}></Header>
-      <Main data={data} selectedApi={selectedApi} />
+      <MainSection data={data} selectedApi={selectedApi} />
       <Footer></Footer>
       {/* <Figure title={title} description={explanation} imageSrc={hdurl} extraInformation={`© ${copyright} @ ${date}`}></Figure>
     */}

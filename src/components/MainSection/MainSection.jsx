@@ -1,8 +1,8 @@
 import Mars from '/src/components/Mars/Mars'
 import Apod from '/src/components/Apod/Apod'
-import './Main.css'
+import './MainSection.css'
 
-const Main = ({ data, selectedApi }) => {
+const MainSection = ({ data, selectedApi }) => {
   return (
     <main>
       {data.photos && (
@@ -15,4 +15,4 @@ const Main = ({ data, selectedApi }) => {
   )
 }
 
-export default Main
+export default MainSection
