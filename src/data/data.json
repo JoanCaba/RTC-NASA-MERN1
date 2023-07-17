@@ -1,4 +1,4 @@
 {
-  "NASA_IMAGE_SOURCE": "./public/Nasa-192.png",
+  "NASA_IMAGE_SOURCE": "Nasa-192.png",
   "NASA_URL": "https://api.nasa.gov/"
 }
