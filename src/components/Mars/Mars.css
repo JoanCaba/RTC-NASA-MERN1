@@ -1,0 +1,14 @@
+.mars-section {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.mars-figures {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}

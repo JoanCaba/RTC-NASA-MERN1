@@ -1172,7 +1172,7 @@ const today = new Date(Date.now()).toISOString().slice(0, 10);
 function App() {
   const [data, setData] = useState(EXAMPLE_RESPONSE_MARS);
   const [selectedDate, setSelectedDate] = useState(today);
-  const [selectedApi, setSelectedApi] = useState('mars');
+  const [selectedApi, setSelectedApi] = useState('apod');
 
   useEffect(() => {
     if (selectedApi === 'mars') { setData(EXAMPLE_RESPONSE_MARS) }
@@ -1206,7 +1206,7 @@ function App() {
     <>
       <Header setSelectedApi={setSelectedApi} selectedDate={selectedDate} setSelectedDate={setSelectedDate} today={today}></Header>
       {data.photos && (
-        <Mars data={data.photos}></Mars>)
+        <Mars data={data.photos} date={selectedDate}></Mars>)
       }
       {selectedApi === 'apod' && (
         <Apod data={data}></Apod>)

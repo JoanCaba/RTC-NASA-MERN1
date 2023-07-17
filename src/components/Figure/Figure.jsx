@@ -7,10 +7,12 @@ const ImageCard = ({ title, description, extraInformation, imageSrc, imageSrcHd 
   const imageDescription = title ? title : extraInformation
   return (
     <div className='card-container' >
-      <img className='card-image' src={imageSrc} alt={imageDescription} onClick={handleModalClick} ></img>
+
+      <figure>
+        <img src={imageSrc} alt={imageDescription} onClick={handleModalClick} />
+        {description && (<figcaption>{title && (<h3>{title}</h3>)}<p>{description}</p></figcaption>)}
+      </figure>
       {modalOpen && (<ImageModal url={imageSrcHd ? imageSrcHd : imageSrc} imageInfo={imageDescription} handleModalClose={handleModalClick}></ImageModal>)}
-      {title && (<h3>{title}</h3>)}
-      {description && (<p>{description}</p>)}
       <footer>{extraInformation}</footer>
     </div >
   )
