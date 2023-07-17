@@ -16,7 +16,11 @@
 
   --primary-text-color: black;
   --primary-background-color: white;
-  --primary-background-color-alpha: #ffffff6b;
+  --primary-background-color-alpha: #ffffffb7;
+
+  --secondary-text-color: black;
+  --secondary-background-color: white;
+  --box-shadow: 1px 1px 2px 1px rgba(153, 153, 153, 1);
 }
 * {
   margin: 0;

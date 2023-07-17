@@ -8,8 +8,9 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  backdrop-filter: blur(3px);
-  border-bottom: 1px solid var(--primary-text-color);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+  box-shadow: 0px 4px 8px darkgrey;
 }
 .header-title {
   display: flex;
@@ -18,7 +19,7 @@ header {
   gap: 2rem;
 }
 .header-title > img {
-  height: 8svh;
+  height: 10svh;
   min-height: 3rem;
 }
 .header-title > a {
@@ -31,10 +32,13 @@ header {
   display: none;
 }
 @media screen and (min-width: 632px) {
+  header {
+    flex-direction: row;
+  }
   .header-title h1 {
     display: block;
   }
   .header-title {
-    justify-content: center;
+    justify-content: space-between;
   }
 }
