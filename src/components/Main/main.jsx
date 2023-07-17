@@ -2,7 +2,7 @@ import Mars from '../Mars/Mars'
 import Apod from '../Apod/Apod'
 import './Main.css'
 
-const main = ({ data, selectedApi }) => {
+const Main = ({ data, selectedApi }) => {
   return (
     <main>
       {data.photos && (
@@ -15,4 +15,4 @@ const main = ({ data, selectedApi }) => {
   )
 }
 
-export default main
+export default Main
