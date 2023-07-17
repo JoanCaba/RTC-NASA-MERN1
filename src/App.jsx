@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { msgTitle, msgCorresponds } from './data/messages.json'
-import Header from './components/Header/Header';
-import Inputs from './components/Inputs/Inputs';
-import getRequestUrl from './utils/getRequestUrl';
-import transformData from './utils/transformData';
-import Apod from '/src/components/Apod/Apod';
-import Main from './components/Main/Main';
-import Footer from './components/Footer/Footer';
+//import { msgTitle, msgCorresponds } from './data/messages.json'
+import Header from '/src/components/Header/Header';
+//import Inputs from './components/Inputs/Inputs';
+//import getRequestUrl from './utils/getRequestUrl';
+//import transformData from './utils/transformData';
+//import Apod from '/src/components/Apod/Apod';
+import Main from '/src/components/Main/Main';
+import Footer from '/src/components/Footer/Footer';
 const EXAMPLE_RESPONSE_APOD = {
   "copyright": "\nNicholas Roemmelt\n(Venture Photography)\n",
   "date": "2023-07-16",

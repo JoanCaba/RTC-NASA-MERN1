@@ -1,5 +1,5 @@
-import Mars from '../Mars/Mars'
-import Apod from '../Apod/Apod'
+import Mars from '/src/components/Mars/Mars'
+import Apod from '/src/components/Apod/Apod'
 import './Main.css'
 
 const Main = ({ data, selectedApi }) => {
