@@ -1,11 +1,10 @@
 import { msgSelectDate, msgSelectApi } from '/src/data/messages.json'
 import './Inputs.css'
-import { registerLocale } from 'react-datepicker';
-import DatePicker from "react-datepicker";
-import es from 'date-fns/locale/es';
-registerLocale('es', es)
+import DatePicker, { registerLocale } from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import InputButton from './InputButton/InputButton';
+import es from 'date-fns/locale/es';
+registerLocale('es', es)
 
 const Inputs = ({ setSelectedApi, setSelectedDate, selectedApi, selectedDate, today }) => {
   const handleDateInput = (date) => {
