@@ -1,4 +1,5 @@
 import './ImageModal.css'
+
 const ImageModal = ({ url, imageInfo, handleModalClose }) => {
 
   return (
@@ -7,6 +8,6 @@ const ImageModal = ({ url, imageInfo, handleModalClose }) => {
       <footer><p>{imageInfo}</p></footer>
     </div>
   )
-}
+};
 
 export default ImageModal

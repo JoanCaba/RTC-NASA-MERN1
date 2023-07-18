@@ -1,22 +1,19 @@
 import { msgSelectDate, msgSelectApi } from '/src/data/messages.json'
 import './Inputs.css'
-import { registerLocale, setDefaultLocale } from 'react-datepicker';
+import { registerLocale } from 'react-datepicker';
 import DatePicker from "react-datepicker";
 import es from 'date-fns/locale/es';
 registerLocale('es', es)
 import "react-datepicker/dist/react-datepicker.css";
-import { forwardRef, useState } from 'react';
 import InputButton from './InputButton/InputButton';
+
 const Inputs = ({ setSelectedApi, setSelectedDate, selectedApi, selectedDate, today }) => {
-  //const [startDate, setStartDate] = useState(new Date(selectedDate));
   const handleDateInput = (date) => {
-    setSelectedDate(new Date(date))
-    //setStartDate(ev)
-    //setSelectedDate(ev.target.value.toLocaleString());
+    const newDate = new Date(date).toISOString().slice(0, 10);
+    setSelectedDate(newDate)
   };
   const handleApiInput = (ev) => {
     setSelectedApi(ev.target.value.toLocaleString());
-
   };
 
   return (
@@ -43,6 +40,6 @@ const Inputs = ({ setSelectedApi, setSelectedDate, selectedApi, selectedDate, to
       </div>
     </div >
   )
-}
+};
 
 export default Inputs

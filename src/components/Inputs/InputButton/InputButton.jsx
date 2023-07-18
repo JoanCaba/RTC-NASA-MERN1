@@ -7,5 +7,5 @@ const InputButton = forwardRef(({ value, onClick }, ref) => (
   </button>
 ));
 
-InputButton.displayName = "InputButtonName"
+InputButton.displayName = "InputButtonName";
 export default InputButton

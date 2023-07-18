@@ -3,7 +3,7 @@
   background: var(--primary-background-color);
   color: var(--primary-text-color);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 2rem;
   align-items: center;
   z-index: 5;
@@ -12,10 +12,14 @@
   font-weight: 500;
 }
 
-.body-footer > div {
+.check-code {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.check-code > p {
+  white-space: nowrap;
 }
 
 .body-footer img {
@@ -33,7 +37,7 @@
   display: none;
 }
 
-@media screen and (min-width: 385px) {
+@media screen and (min-width: 648px) {
   .body-footer > p {
     display: block;
   }

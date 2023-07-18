@@ -5,5 +5,7 @@
   "msgSelectDate": "Selecciona una fecha",
   "msgSelectApi": "Selecciona una API",
   "msgFooter": "Creado por Joan Cabañeros con Vite/React/JavaScript",
-  "msgCheckCode": "Mira el código 👉"
+  "msgCheckCode": "Mira el código 👉",
+  "msgLoading": "Buscando la zona de alunizaje, espera por favor...",
+  "msgNoData": "😥 No se ha encontrado ninguna imagen para la fecha"
 }

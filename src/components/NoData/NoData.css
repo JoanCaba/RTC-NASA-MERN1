@@ -1,0 +1,17 @@
+.nodata-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nodata-container > img {
+  width: 60svw;
+  object-fit: cover;
+}
+.nodata-container > h2 {
+  width: 90svw;
+  word-wrap: normal;
+  text-align: center;
+}
