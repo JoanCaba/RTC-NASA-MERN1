@@ -7,5 +7,6 @@
   "msgFooter": "Creado por Joan Cabañeros con Vite/React/JavaScript",
   "msgCheckCode": "Mira el código 👉",
   "msgLoading": "Buscando la zona de alunizaje, espera por favor...",
-  "msgNoData": "😥 No se ha encontrado ninguna imagen para la fecha"
+  "msgNoData": "😥 No se ha encontrado ninguna imagen para la fecha",
+  "msgErrorApi": "☠ Ha habido un problema al contactar con la NASA..."
 }

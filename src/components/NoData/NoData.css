@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin: 2rem 0;
 }
 
 .nodata-container > img {
@@ -14,4 +15,20 @@
   width: 90svw;
   word-wrap: normal;
   text-align: center;
+}
+.nodata-container > p {
+  font-weight: 600;
+  color: var(--tertiary-text-color);
+}
+
+.nodata-container > p::after,
+.nodata-container > p::before {
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+.nodata-container > p::before {
+  content: open-quote;
+}
+.nodata-container > p::after {
+  content: close-quote;
 }
