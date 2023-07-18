@@ -9,10 +9,10 @@ const Mars = ({ data }) => {
       <h2>{`${msgCorrespondsMars} ${data[0].earth_date}`}</h2>
       <div className='mars-figures'>
         {data.map((photo) => (
-          <Figure key={photo.id} imageSrc={photo.img_src} extraInformation={`${cameraFullname[photo.camera.name]} @ ${photo.rover.name}`}></Figure>
+          <Figure key={photo.id} imageSrc={photo.img_src} extraInformation={<>{cameraFullname[photo.camera.name]} <span>@</span> {photo.rover.name}</>}></Figure>
         ))}
       </div>
-    </section>
+    </section >
 
   )
 }

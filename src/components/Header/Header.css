@@ -11,35 +11,48 @@ header {
   align-items: center;
   backdrop-filter: blur(5px);
   z-index: 5;
-  box-shadow: 0px 4px 8px darkgrey;
+  box-shadow: var(--box-shadow-secondary);
 }
 .header-title {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .header-title > img {
-  height: 10svh;
-  min-height: 3rem;
-}
-.header-title > a {
-  line-height: 1.2;
-  font-style: normal;
-  font-weight: 700;
-  color: var(--primary-text-color);
+  height: 3rem;
 }
 .header-title h1 {
   display: none;
 }
+@media screen and (min-width: 365px) {
+  .header-title > img {
+    max-height: 2rem;
+  }
+  .header-title {
+    font-size: 10px;
+  }
+  .header-title h1 {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 632px) {
+  .header-title > img {
+    max-height: 3rem;
+  }
+  .header-title {
+    justify-content: space-between;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1055px) {
   header {
     flex-direction: row;
   }
   .header-title h1 {
     display: block;
-  }
-  .header-title {
-    justify-content: space-between;
+    font-size: 32px;
   }
 }

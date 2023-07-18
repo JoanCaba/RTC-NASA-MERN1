@@ -3,7 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
   gap: 1rem;
-  width: 70svw;
+}
+
+@media screen and (min-width: 450px) {
+  .apod-section {
+    margin: 1rem;
+    width: 70svw;
+  }
 }

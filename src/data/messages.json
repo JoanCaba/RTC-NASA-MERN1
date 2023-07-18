@@ -3,5 +3,7 @@
   "msgCorresponds": "Esta imagen corresponde con la fecha",
   "msgCorrespondsMars": "Las imagenes corresponden con la fecha terrestre",
   "msgSelectDate": "Selecciona una fecha",
-  "msgSelectApi": "Selecciona una API"
+  "msgSelectApi": "Selecciona una API",
+  "msgFooter": "Creado por Joan Cabañeros con Vite/React/JavaScript",
+  "msgCheckCode": "Mira el código 👉"
 }

@@ -1,10 +1,12 @@
 .inputs-container {
   font-weight: 600;
   display: flex;
+  margin: 0 2rem;
   gap: 1rem;
 }
+.inputs-container div label,
 .date-label {
-  display: inline;
+  display: none;
 }
 select {
   background-color: var(--secondary-background-color);
@@ -21,4 +23,11 @@ option {
   font-weight: 600;
   text-align: center;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 385px) {
+  .inputs-container div label,
+  .date-label {
+    display: inline;
+  }
 }
