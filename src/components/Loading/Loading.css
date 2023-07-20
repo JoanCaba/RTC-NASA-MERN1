@@ -4,7 +4,7 @@
   align-items: center;
   gap: 2rem;
   margin: 2rem 0;
-  height: 100%;
+  min-height: 80svh;
 }
 .loader-rocket {
   position: absolute;
